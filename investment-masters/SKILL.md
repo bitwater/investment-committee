@@ -1,9 +1,9 @@
 ---
-name: investment-committee
+name: investment-masters
 description: 调用由查理·芒格、霍华德·马克斯、段永平、斯坦利·德鲁肯米勒、詹姆斯·西蒙斯组成的投资大师委员会，对任意标的进行多维度独立分析并输出委员会裁决报告。适用场景：(1) 买入判断——「委员会分析腾讯」「大师怎么看英伟达」「帮我分析BTC」；(2) 仓位管理——「我持有半仓BTC，怎么操作」「已持有NVDA，加仓还是减仓」；(3) 比较分析——「腾讯和谷歌选哪个」。支持股票（A/港/美）、ETF、BTC/加密资产、黄金/大宗商品。
 ---
 
-# Investment Committee Skill
+# Investment Masters Skill
 
 五位大师平权投票（各 20%），并行独立分析，输出中文裁决报告。
 
@@ -13,7 +13,7 @@ description: 调用由查理·芒格、霍华德·马克斯、段永平、斯坦
 
 **行情抓取**（优先用脚本，比搜索更准确）：
 ```bash
-python3 {workspace}/investment-committee/scripts/fetch_price.py GOOGL 700.hk BTC GOLD
+python3 {workspace}/investment-masters/scripts/fetch_price.py GOOGL 700.hk BTC GOLD
 ```
 > 数据源：stooq.com（免费无限流）。常用映射：`700`→`700.hk`，`NVDA`→`nvda.us`，`BTC`→`btc.v`，`GOLD`/`黄金`→`xauusd`。
 
@@ -71,7 +71,7 @@ sessions_spawn × 5（同时发出，保证独立性）
 4. 提取可直接执行的操作参数（止损价、仓位、加仓条件）
 5. 按 `assets/report-template.md` 格式输出
 6. 发送到当前 Discord 频道
-7. 存档到 `{workspace}/investment-committee/history/YYYY-MM-DD_标的_说明.md`
+7. 存档到 `{workspace}/investment-masters/history/YYYY-MM-DD_标的_说明.md`
 
 ## 特殊资产权重调整
 

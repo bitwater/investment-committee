@@ -51,4 +51,4 @@
 [**特殊标注：** 硬否决 / 软否决 / 加密资产注记]  ← 触发时添加
 
 ---
-<!-- 存档路径：{workspace}/investment-committee/history/YYYY-MM-DD_代码_名称.md -->
+<!-- 存档路径：{workspace}/investment-masters/history/YYYY-MM-DD_代码_名称.md -->
